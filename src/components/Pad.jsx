@@ -5,7 +5,7 @@ export default function Pad(props) {
     const [backgroundColor, setBackgroundColor]= useState()
 
     const playAudio= ()=>{
-        setBackgroundColor('blue')
+        setBackgroundColor('lightblue')
         if(audioref.current)
         {
             audioref.current.play();

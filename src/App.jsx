@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <div className="container" id="drum-machine">
-        <div id="display">
+        <div id="display" className='display'>
           {display}
 
         </div>

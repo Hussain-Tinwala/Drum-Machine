@@ -6,17 +6,19 @@
 
 body{
   font-family: 'Rubik';
+  background: rgb(63, 63, 63);
 }
 
 .container{
-  border: 5px solid black;
-  border-radius: 10px;
+  border: 5px solid rgb(27, 28, 50);
+  border-radius: 30px;
   height: 400px;
   height: auto;
   width: 550px;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
+  background: azure;
 }
 
 .heading{
@@ -34,10 +36,9 @@ body{
 
 .btns{
   padding: 25px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 200px;
-  margin: 30px;
-  margin-top: 0px;
+  margin:50px 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -53,4 +54,14 @@ body{
   background: ghostwhite;
   font-size: 25px;
   font-weight: 700;
+}
+
+.display{
+  border-bottom: 1px solid black;;
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: goldenrod;
 }
