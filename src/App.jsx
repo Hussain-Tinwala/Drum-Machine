@@ -26,7 +26,27 @@ function App() {
     setDisplay(audioClip)
   }
 
-  
+  React.useEffect(() => {
+    // Handle key presses
+    const handleKeyPress = (event) => {
+      // Find the pad that matches the pressed key
+      const pad = padsData.find((pad) => pad.innerText === event.key.toUpperCase());
+
+      if (pad) {
+        // Simulate a click on the button to play audio
+        document.getElementById(pad.id).click(); // Trigger the pad's onClick handler
+      }
+    };
+
+    // Add event listener when component mounts
+    window.addEventListener("keydown", handleKeyPress);
+
+    // Cleanup listener when component unmounts
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
+
   
   return (
     <>
